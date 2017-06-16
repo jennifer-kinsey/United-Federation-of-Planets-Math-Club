@@ -1,6 +1,14 @@
 <h2>Our Members</h2>
 
-<div *ngFor="let member of members | async" class="panel panel-default">
+<h3>Check out our members and our high Pi'ers!</h3>
+
+<select (change)="onChange($event.target.value)">
+  <option value="allMembers" selected="selected">All Members</option>
+  <option value="highPis">High Pi's!</option>
+</select>
+<br><br>
+
+<div *ngFor="let member of members | async | pi:filterByPiCount" class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)"><em>{{member.name}}</em> - {{member.title}}</h3>
     <div *ngIf="currentRoute === '/admin'">

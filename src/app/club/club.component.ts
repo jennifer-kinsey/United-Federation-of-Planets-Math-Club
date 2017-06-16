@@ -13,6 +13,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class ClubComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByPiCount: string = "allMembers";
 
 
   constructor(private router: Router, private memberService: MemberService){}
@@ -24,5 +25,9 @@ export class ClubComponent implements OnInit {
   goToDetailPage(clickedMember) {
     this.router.navigate(['members', clickedMember.$key]);
   };
+
+  onChange(optionFromMenu) {
+    this.filterByPiCount = optionFromMenu;
+  }
 
 }
