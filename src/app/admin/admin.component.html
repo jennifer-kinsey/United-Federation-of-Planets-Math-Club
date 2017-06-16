@@ -7,33 +7,44 @@
       <div>
         <label>Member Name:</label>
         <br>
-        <input #newName required>
+        <input #newName>
       </div>
 
       <div>
         <label>Member Title:</label>
         <br>
-        <input #newTitle required>
+        <input #newTitle>
       </div>
 
       <div>
         <label>Member Since:</label>
         <br>
-        <input type="number" #newMemberSince required maxlength="4">
+        <input type="number" #newMemberSince>
       </div>
 
       <div>
         <label>Recites Pi to this digit:</label>
         <br>
-        <input type="number" #newRecitesTo required>
+        <input type="number" #newRecitesTo>
       </div>
 
       <div>
         <label>Fave Mathematician:</label>
         <br>
-        <input #newFavoriteMathematician required>
+        <input #newFavoriteMathematician>
       </div>
-      <button (click)="submitForm(newName.value, newTitle.value, newMemberSince.value, newRecitesTo.value, newFavoriteMathematician); newName.value=''; newTitle.value=''; newMemberSince.value=''; newFavoriteMathematician='';">Add</button>
+      <button (click)="submitForm(
+      newName.value,
+      newTitle.value,
+      newMemberSince.value,
+      newRecitesTo.value,
+      newFavoriteMathematician.value
+      );
+      newName.value='';
+      newTitle.value='';
+      newMemberSince.value='';
+      newRecitesTo.value='';
+      newFavoriteMathematician.value=''">Add</button>
     </div>
   </div>
 </div>
