@@ -29,7 +29,12 @@ export class MemberService {
                               memberSince: localUpdatedMember.memberSince,
                               recitesTo: localUpdatedMember.recitesTo,
                               favoriteMathematician: localUpdatedMember.favoriteMathematician});
-}
+  }
+
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 
 
 }
