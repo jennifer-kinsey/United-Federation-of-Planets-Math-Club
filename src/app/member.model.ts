@@ -5,6 +5,5 @@ export class Member {
     public memberSince: number,
     public recitesTo: number,
     public favoriteMathematician: string,
-    public id: number
   ) { }
 }

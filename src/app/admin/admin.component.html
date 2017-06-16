@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add New Member to Math Club</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Member Name:</label>
+        <br>
+        <input #newName required>
+      </div>
+
+      <div>
+        <label>Member Title:</label>
+        <br>
+        <input #newTitle required>
+      </div>
+
+      <div>
+        <label>Member Since:</label>
+        <br>
+        <input type="number" #newMemberSince required maxlength="4">
+      </div>
+
+      <div>
+        <label>Recites Pi to this digit:</label>
+        <br>
+        <input type="number" #newRecitesTo required>
+      </div>
+
+      <div>
+        <label>Fave Mathematician:</label>
+        <br>
+        <input #newFavoriteMathematician required>
+      </div>
+      <button (click)="submitForm(newName.value, newTitle.value, newMemberSince.value, newRecitesTo.value, newFavoriteMathematician); newName.value=''; newTitle.value=''; newMemberSince.value=''; newFavoriteMathematician='';">Add</button>
+    </div>
+  </div>
+</div>
