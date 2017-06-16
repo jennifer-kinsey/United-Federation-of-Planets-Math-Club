@@ -19,7 +19,7 @@ export class ClubComponent implements OnInit {
   }
 
     goToDetailPage(clickedMember: Member) {
-    this.router.navigate(['albums', clickedMember.id]);
+    this.router.navigate(['members', clickedMember.id]);
   };
 
 }
