@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Greater Portland Math Club';
+  title = 'United Federation of Planets Math Club';
 }

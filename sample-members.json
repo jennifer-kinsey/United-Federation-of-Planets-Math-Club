@@ -1,0 +1,23 @@
+{ "members": [{
+    "name": "Kathryn Janeway",
+    "title": "Captain",
+    "memberSince": 2007,
+    "recitesTo": 45,
+    "favoriteMathematician": "Da Vinci - if that counts.",
+    "id": 1
+    }, {
+    "name": "Beverly Crusher",
+    "title": "Member",
+    "memberSince": 2010,
+    "recitesTo": 17,
+    "favoriteMathematician": "Tycho Brahe",
+    "id": 2
+      }, {
+    "name": "Jadxia Dax",
+    "title": "Science Officer",
+    "memberSince": 2011,
+    "recitesTo": 119,
+    "favoriteMathematician": "Abarca of Qomar",
+    "id": 3
+  }]
+}
