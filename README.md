@@ -50,10 +50,11 @@ Additionally in your Firebase application you will want to set the following rea
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Screenshot
+## Screenshots
 
-![SS1](assets/image/ss1.png)
-![SS1](assets/image/ss2.png)
+![ss1](https://user-images.githubusercontent.com/26371824/27247917-450efa32-52b2-11e7-9b9f-8d6af314e040.png)
+![ss2](https://user-images.githubusercontent.com/26371824/27247923-511df8c8-52b2-11e7-89d8-ca55bd392234.png)
+
 
 
 ## Live Deployment:
